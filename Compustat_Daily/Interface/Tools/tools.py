@@ -9,8 +9,10 @@ class wrdsdata:
     def __init__(self):
 
         global wrds
+        
+        username = 'YOUR_USERNAME_HERE'
 
-        wrds = w.Connection(wrds_username='joldmixon')
+        wrds = w.Connection(wrds_username=username)
         print ('Connected')
 
     def get_data(symbol,period,duration):
